@@ -2,6 +2,7 @@ require 'pry'
 
 def my_all?(collection)
   i = 0
+<<<<<<< HEAD
   block_return_values = []
   while i < collection.length
     block_return_values << yield(collection[i])
@@ -14,3 +15,10 @@ def my_all?(collection)
   end
 end
 my_all?([1,2,3]) {|i| i < 2}
+=======
+  while i < collection.length
+    yield(collection[i])
+    i += 1
+  end
+end
+>>>>>>> 9ce984bae6c73692a80e2bff412a65ccd5eb0f09
